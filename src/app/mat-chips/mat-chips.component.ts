@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, ElementRef, Input, OnInit, ViewChild} from '@angular/core';
 
 @Component({
   selector: 'app-mat-chips',
@@ -7,11 +7,22 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class MatChipsComponent implements OnInit {
 
-  @Input('aria-orientation')  ariaOrientation:any
+ left:any = document.getElementById('slideLeft')
+ right:any = document.getElementById('slideRight')
+  constructor() {
 
-  constructor() { }
+  }
 
   ngOnInit(): void {
   }
+ //
+  btnLeft() {
+    console.log('Left')
+    this.left.scrollLeft+=30;
+ }
 
+  btnRgt() {
+    console.log('Right')
+    this.left.scrollLeft-=30;
+  }
 }
