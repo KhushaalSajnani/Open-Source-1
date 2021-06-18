@@ -25,4 +25,8 @@ export class MatChipsComponent implements OnInit {
     console.log('Right')
     this.left.scrollLeft-=30;
   }
+
+  onScroll() {
+    console.log('scrolled')
+  }
 }

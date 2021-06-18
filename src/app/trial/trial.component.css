@@ -1,0 +1,22 @@
+.main-panel {
+  height: 60px;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  display: flex;
+  width: 100vw;
+  justify-content:space-evenly;
+}
+.inner-box{
+  min-width: 100px;
+  margin:auto;
+  height: 45px;
+  line-height: 50px;
+  text-align: center;
+  background-color: aquamarine;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.main-panel::-webkit-scrollbar{
+  height: 2px;
+  background-color: red;
+}

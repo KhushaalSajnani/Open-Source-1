@@ -25,6 +25,7 @@
     "@material/chips": "^11.0.0",
     "better-scroll": "^2.3.1",
     "horwheel": "^1.0.1",
+    "ngx-infinite-scroll": "^10.0.1",
     "rxjs": "~6.6.0",
     "tslib": "^2.1.0",
     "zone.js": "~0.11.4"

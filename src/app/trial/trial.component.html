@@ -1,0 +1,20 @@
+<div class="main-panel">
+  <div
+    infiniteScroll
+    [infiniteScrollDistance]="2"
+    [infiniteScrollThrottle]="50"
+    [infiniteScrollContainer]="selector"
+    [fromRoot]="true"
+    (scrolled)="onScroll()"
+    [horizontal]="true"
+  ></div>
+
+  <div class="inner-box">All</div>
+  <div class="inner-box">Noida</div>
+  <div class="inner-box">Gurugram</div>
+  <div class="inner-box">Jaipur</div>
+  <div class="inner-box">Lucknow</div>
+  <div class="inner-box">Mumbai</div>
+  <div class="inner-box">Raipur</div>
+  <div class="inner-box">Gwalior</div>
+</div>
